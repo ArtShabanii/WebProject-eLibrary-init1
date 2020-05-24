@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN/SIGNUP - WELCOME</title>
+        <link rel="stylesheet" href="css/loginForm.css">
+        <script src="js/validationSignIn.js"></script>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <article>
+	        <div class="form-container-sign-up-container" id="form-container-sign-up-container">
+		        <form name="signUpForm" action="#">
+			        <h1>Create Account</h1>
+					<input type="text" name="FName" id="FName" placeholder="First Name" onblur="validateSignUp()"/><div id="div3"></div>
+					<input type="text" name="LName" id="LName"placeholder="Last Name" onblur="validateSignUp()"/><div id="div4"></div>
+					<input type="text" name="Username" id="Username" placeholder="Username" onblur="validateSignUp()"/><div id="div5"></div>
+			        <input type="email" name="Email" id="Email" placeholder="Email" onblur="validateSignUp()"/><div id="div6"></div>
+					<input type="password" name="Password" id="Password" placeholder="Password" onblur="validateSignUp()"/><div id="div7"></div>
+					<input type="checkbox" onclick="showPasswordSignUp()">Show Password
+			        <button id="SignUpButton" onclick="" disabled=true>Sign Up</button>
+		        </form>
+            </div>
+            </article>
+            <article>
+	        <div class="form-container-sign-in-container" id="form-container-sign-in-container">
+		        <form name="logInForm" action="#">
+			        <h1>Sign in</h1>
+			        <input type="text" name="usern" id="username"  placeholder="Username" onblur="validateLogin()" /><div id="div1"></div>
+					<input type="password" name="pw" id="password" placeholder="Password" onblur="validateLogin()"/> <div id="div2"></div>
+					<input type="checkbox" onclick="showPasswordLogIn()">Show Password
+					<a href="#" style="color:#000">Forgot your password?</a>
+					<input type="button" value="Login" id="submit" onclick="validateLoginButton()"/>
+		        </form>
+			</div>
+			</article>
+			<div class="signUpBtn" id="signUpBtn">
+				<h1 class="hideButton" onclick="switchVisibleSignUp()">Sign Up</h1>
+				<button class="suBtn" id="suBtn" onclick="switchVisibleSignUp()">Sign Up</button>
+			</div>
+			<div class="logInBtn" id="logInBtn">
+				<h1 class="hideButton" onclick="switchVisibleLogIn()">Login</h1>
+				<button class="suBtn" id="suBtn" onclick="switchVisibleLogIn()">Login</button>
+			</div>  
+		</div>
+		<script src="js/validationSignUp.js"></script>
+		<script src="js/loginForm.js"></script>
+    </body>
+</html>

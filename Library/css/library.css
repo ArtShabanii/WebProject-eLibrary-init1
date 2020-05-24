@@ -1,0 +1,70 @@
+html body{
+    margin:0;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+#header {
+	background-color: transparent;
+	cursor: default;
+	left: 0;
+	padding: 20px 10px;
+    border: none;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 1%;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-area li{
+    display: inline-block;
+    width: auto;
+}
+
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding:5px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-area li a:hover{
+    background:#ebb531;
+    color:#000;
+}
+
+#header.alt {
+	background-color: transparent;
+	border: 0;
+	box-shadow: none;
+	position: absolute;
+}
+
+@media screen and (max-width:800px) {
+    .nav-area li {
+      width:100%; 
+      margin: 1%;
+    }
+}
+
+.content{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../../Images/underc.jpg")  50%  no-repeat fixed;
+  background-size: cover;
+  height:100vh
+}
