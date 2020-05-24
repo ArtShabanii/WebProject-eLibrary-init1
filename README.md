@@ -52,4 +52,4 @@ You can find the code at slideshow.js
 
 ## License
 
-Distributed under the Apache License. See [LICENSE](LICENSE) for more information.
+Distributed under the GNU General Public License v3.0. See [LICENSE](LICENSE.md) for more information.
